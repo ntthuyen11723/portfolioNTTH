@@ -23,7 +23,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     const navLinks = [
-        { name: "Journal", href: "/experience" },
+        { name: "Journal", href: "/experience-skills" },
         { name: "Projects", href: "/projects" },
         { name: "Achievements", href: "/achievements" },
         // { name: "About", href: "/about" },
@@ -48,12 +48,12 @@ export function Footer() {
                             Business Analyst with a solid foundation in transforming complex business requirements into systematic technical solutions. Specialized in Process Modeling and Digital Product Design throughout the Software Development Life Cycle (SDLC)
                         </p>
                         <div className="flex gap-4">
-                            <Link href="/https://www.linkedin.com/in/huyen-ntt/" target="_blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
+                            <a href="/https://www.linkedin.com/in/huyen-ntt/" target="_blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
                                 <Linkedin className="w-4 h-4" />
-                            </Link>
-                            <Link href="mailto:ntt.huyen4125354@gmail.com" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
+                            </a>
+                            <a href="mailto:ntt.huyen4125354@gmail.com" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
                                 <Mail className="w-4 h-4" />
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
