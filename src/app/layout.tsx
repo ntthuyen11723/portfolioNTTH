@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 
 // alias imports
 import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/navbar"; // Đảm bảo đường dẫn này đúng với vị trí file navbar của bạn
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer"; // Đảm bảo đường dẫn này đúng với vị trí file navbar của bạn
 
 // relative imports
 import "./globals.css";
@@ -40,6 +41,7 @@ export default function RootLayout({
         </main>
 
         {/* Bạn có thể thêm <Footer /> ở đây sau này */}
+        <Footer />
       </body>
     </html>
   );

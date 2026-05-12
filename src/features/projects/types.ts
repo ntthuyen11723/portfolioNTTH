@@ -1,38 +1,3 @@
-// // src/features/projects/types.ts
-
-// export interface Project {
-//   slug: string;
-//   title: string;
-//   type: string;
-//   description: string;
-
-//   metrics: {
-//     bpmn: number;
-//     screens: number;
-//     actors?: number;
-//     testCases?: number;
-//   };
-
-//   tags: string[];
-
-//   sections: {
-//     overview: string;
-//     artifacts: string;
-//     mockups: string;
-//     outcome: string;
-//   };
-
-//   // Optional (để scale sau này)
-//   images?: {
-//     bpmn?: string[];
-//     ui?: string[];
-//     flow?: string;
-//   };
-
-//   tools?: string[];
-// }
-// src/features/projects/types.ts
-
 /* ================= BASE TYPES ================= */
 
 export type Metric = {
@@ -43,6 +8,7 @@ export type Metric = {
 export type ArtifactItem = {
   title: string;
   description?: string;
+  externalLink?: string;
   images?: string[];
   files?: string[];
 };
@@ -53,13 +19,17 @@ export type Project = {
   slug: string;
 
   /* ===== BASIC INFO ===== */
+  title_card: string;
   title: string;
+
   type: string;
   domain?: string;
+  method?: string;
   duration?: string;
   teamSize?: number;
 
   shortDescription: string;
+  longDescription?: string;
   heroImage?: string;
 
   tags: string[];
@@ -68,6 +38,7 @@ export type Project = {
   /* ===== METRICS (FOR HOME + CARD) ===== */
   metrics: {
     bpmn?: number;
+    usecases?: number;
     screens?: number;
     actors?: number;
     testCases?: number;
@@ -78,6 +49,7 @@ export type Project = {
     client?: string;
     background: string;
     problem: string[];
+    problemdtl:string[];   
     objectives: string[];
   };
 
@@ -88,20 +60,21 @@ export type Project = {
   };
 
   /* ===== THINKING PROCESS ===== */
-  process: {
-    steps: {
-      name: string;
-      description: string;
+  // process: {
+  //   steps: {
+  //     name: string;
+  //     description: string;
 
-      // 🔥 VERY IMPORTANT (BA thinking)
-      output?: string[]; // bạn tạo ra gì ở step này
-      artifacts?: string[]; // link tới artifact type (bpmn/ui/docs)
-    }[];
-  };
+  //     // 🔥 VERY IMPORTANT (BA thinking)
+  //     output?: string[]; // bạn tạo ra gì ở step này
+  //     artifacts?: string[]; // link tới artifact type (bpmn/ui/docs)
+  //   }[];
+  // };
 
   /* ===== ARTIFACTS (PROOF) ===== */
   artifacts: {
     bpmn?: ArtifactItem;
+    usecases?: ArtifactItem;
     ui?: ArtifactItem;
     documents?: ArtifactItem;
     dataModel?: ArtifactItem;
