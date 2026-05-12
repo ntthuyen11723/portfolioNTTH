@@ -1,6 +1,5 @@
 "use client";
 
-import a from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";

@@ -1,4 +1,3 @@
-import a from "next/link";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
