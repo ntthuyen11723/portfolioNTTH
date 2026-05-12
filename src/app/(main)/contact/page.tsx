@@ -69,14 +69,12 @@ export default function HireMePage() {
             <Send className="w-3 h-3" /> Available for Work
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
-            Tôi giúp biến <span className="text-[#286181]">yêu cầu mơ hồ</span> <br />
-            thành <span className="text-[#286181]">giải pháp rõ ràng</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight uppercase">
+            <span className="text-[#D74B16]">Buniess</span> Analyst
           </h1>
 
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-            Junior Business Analyst với kinh nghiệm trong Digital Transformation, 
-            chuyên phân tích yêu cầu, mô hình hóa quy trình và hỗ trợ triển khai hệ thống.
+            "Every limit starts as an unverified assumption"
           </p>
 
           {/* CTA */}
