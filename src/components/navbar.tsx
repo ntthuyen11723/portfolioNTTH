@@ -70,7 +70,7 @@ export function Navbar() {
             className="text-[#ffffff] font-bold hover:text-[#ffffff] hover:bg-[#d74916c4] border border-[#6f1e00] bg-[#d74b16] transition-colors"
           >
             {/* Tên file khớp với Resume của bạn */}
-            <a href="/RESUMÉ_JUNIOR BUSINESS ANALYST_ NGUYEN_THI_THU_HUYEN.pdf" download>
+            <a href="/https://docs.google.com/document/d/1AuvtumRA0943NpP2oIwO1rED3kZ6CY2E6bLnlAeuKVI/edit?usp=sharing" download>
               <FileDown className="mr-2 h-4 w-4 " />
               CV
             </a>
