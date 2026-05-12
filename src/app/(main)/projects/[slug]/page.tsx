@@ -368,7 +368,7 @@ export default function ProjectDetailPage({ params }: Props) {
                     <Layers className="w-4 h-4" /> {project.artifacts.bpmn.title}
                   </div>
                   <div className="grid grid-cols-1 gap-6">
-                    {project.artifacts.bpmn.images.map((img, i) => (
+                    {project.artifacts.bpmn.images?.map((img, i) => (
                       <div key={i} className="group relative rounded-3xl overflow-hidden border border-slate-200 bg-white">
                         <Image
                           src={img}
@@ -391,7 +391,7 @@ export default function ProjectDetailPage({ params }: Props) {
                     <Layout className="w-4 h-4" /> {project.artifacts.ui.title}
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    {project.artifacts.ui.images.map((img, i) => (
+                    {project.artifacts.ui.images?.map((img, i) => (
                       <motion.div 
                         key={i} 
                         whileHover={{ y: -5 }}

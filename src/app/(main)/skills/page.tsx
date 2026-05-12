@@ -14,6 +14,7 @@ import {
   Database,
   Layout,
   FileText,
+  type LucideIcon,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -77,7 +78,7 @@ const TIMELINE = [
 /* ================= SHARED COMPONENTS ================= */
 
 // Icon Box chuẩn hóa cho toàn bộ trang
-const IconBox = ({ icon: Icon, className = "" }: { icon: any; className?: string }) => (
+const IconBox = ({ icon: Icon, className = "" }: { icon: LucideIcon; className?: string }) => (
   <div className={`w-14 h-14 rounded-2xl bg-[#286181] shadow-lg shadow-[#286181]/20 flex items-center justify-center shrink-0 ${className}`}>
     <Icon className="w-6 h-6 text-white" />
   </div>
