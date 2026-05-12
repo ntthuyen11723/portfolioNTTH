@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -32,21 +31,21 @@ export function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 max-w-6xl">
 
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2 group">
+        <a href="/" className="flex items-center gap-2 group">
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f5f5f5] text-orange-500 transition-transform group-hover:rotate-12">
             <Sprout className="h-6 w-6 " />
           </div>
           <span className="text-xl font-bold tracking-tighter text-orange-500">
             HUYEN<span className="text-[#ffffff]">.BA</span>
           </span>
-        </Link>
+        </a>
 
         {/* DESKTOP NAVIGATION */}
         <nav className="hidden lg:flex items-center gap-10">
           {navItems.map((item) => {
             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
             return (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className={cn(
@@ -57,7 +56,7 @@ export function Navbar() {
                 )}
               >
                 {item.name}
-              </Link>
+              </a>
             );
           })}
         </nav>
@@ -70,7 +69,7 @@ export function Navbar() {
             className="text-[#ffffff] font-bold hover:text-[#ffffff] hover:bg-[#d74916c4] border border-[#6f1e00] bg-[#d74b16] transition-colors"
           >
             {/* Tên file khớp với Resume của bạn */}
-            <a href="/https://docs.google.com/document/d/1AuvtumRA0943NpP2oIwO1rED3kZ6CY2E6bLnlAeuKVI/edit?usp=sharing">
+            <a href="https://docs.google.com/document/d/1AuvtumRA0943NpP2oIwO1rED3kZ6CY2E6bLnlAeuKVI/edit?usp=sharing">
               <FileDown className="mr-2 h-4 w-4 " />
               View CV
             </a>
@@ -96,7 +95,7 @@ export function Navbar() {
                 </div>
                 <div className="flex-1 overflow-y-auto py-6 px-4">
                   {navItems.map((item) => (
-                    <Link
+                    <a
                       key={item.href}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
@@ -108,12 +107,14 @@ export function Navbar() {
                       )}
                     >
                       {item.name}
-                    </Link>
+                    </a>
                   ))}
                 </div>
                 <div className="p-6 border-t border-slate-50">
                   <Button asChild className="w-full bg-[#00072D] h-14 rounded-2xl text-base font-bold shadow-lg">
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>Contact Now</Link>
+                  <a href="mailto:ntt.huyen4125354@gmail.com">
+                    Contact me now !
+                  </a>
                   </Button>
                 </div>
               </div>

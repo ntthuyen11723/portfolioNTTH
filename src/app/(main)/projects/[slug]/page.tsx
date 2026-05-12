@@ -3,8 +3,8 @@
 import { notFound } from "next/navigation";
 import { useState, useRef } from "react";
 import { PROJECTS, } from "@/features/projects/constants";
-import { ArtifactItem } from "@/features/projects/types";
-import Link from "next/link";
+import {ArtifactItem } from "@/features/projects/types";
+
 import Image from "next/image";
 
 
@@ -291,7 +291,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
         <div className="container max-w-6xl mx-auto px-4 pt-16 pb-14">
           <div className="flex items-center gap-2 text-xs text-slate-400 mb-8 font-medium">
-            <Link href="/projects" className="text-[20px] hover:text-[#00072D] transition-colors">← Projects</Link>
+            <a href="/projects" className="text-[20px] hover:text-[#00072D] transition-colors">← Projects</a>
             <span>/</span>
             <span className="text-[#e29274] text-[20px]" >{project.title}</span>
           </div>

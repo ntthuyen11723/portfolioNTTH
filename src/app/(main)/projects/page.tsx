@@ -37,7 +37,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* 2. PROJECT LIST SECTION */}
-      <section className="bg-slate-50/50 py-16 md:py-24">
+      <section className="bg-slate-50/50 py-16 md:py-16">
         <div className="container max-w-6xl mx-auto px-4">
           
           {/* Real Information Header - Thay thế cho Virtual Filters */}

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PROJECTS } from "@/features/projects/constants";
@@ -235,12 +234,12 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Featured Projects</h2>
             <p className="text-[#D74B16] max-w-md font-bold">From Needs to Solutions</p>
           </motion.div>
-          <Link href="/projects" className="group hidden md:flex items-center gap-1 text-sm font-bold text-[#D74B16]">
+          <a href="/projects" className="group hidden md:flex items-center gap-1 text-sm font-bold text-[#D74B16]">
             VIEW ALL PROJECTS
             <motion.div animate={{ x: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
               <ChevronRight className="w-4 h-4" />
             </motion.div>
-          </Link>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -504,9 +503,9 @@ export default function HomePage() {
 
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button asChild size="lg" className="bg-white hover:bg-slate-100 text-[#00072D] font-bold rounded-xl px-10 h-14 shadow-2xl transition-colors">
-                  <Link href="mailto:ntt.huyen4125354@gmail.com">
+                  <a href="mailto:ntt.huyen4125354@gmail.com">
                     Contact me now !
-                  </Link>
+                  </a>
                 </Button>
               </motion.div>
             </div>

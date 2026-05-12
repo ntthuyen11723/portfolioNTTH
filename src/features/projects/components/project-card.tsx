@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -38,7 +37,7 @@ export function ProjectCard({ project }: { project: Project }) {
       transition={{ duration: 0.25, ease: "easeOut" }}
       className="h-full"
     >
- <Link href={`/projects/${project.slug}`} className="group block h-full">
+ <a href={`/projects/${project.slug}`} className="group block h-full">
         <article
           className="flex flex-col h-full bg-white rounded-2xl overflow-hidden transition-all duration-300 border border-[#A2A2A2] hover:border-[#d74b16]/40"
           style={{
@@ -166,7 +165,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </article>
-      </Link>
+      </a>
     </motion.div>
   );
 }

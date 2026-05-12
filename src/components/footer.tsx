@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 
 // LinkedIn Icon
@@ -36,19 +35,19 @@ export function Footer() {
 
                     {/* Brand Column */}
                     <div className="md:col-span-5">
-                        <Link href="/" className="flex items-center gap-2 mb-6 group w-fit">
+                        <a href="/" className="flex items-center gap-2 mb-6 group w-fit">
                             <div className="w-7 h-7 rounded-full bg-[#f76632] flex items-center justify-center font-black text-[10px] text-[#163300]">
                                 TH
                             </div>
                             <span className="font-black text-sm tracking-tight text-white uppercase">
                                 HUYEN NGUYEN THI THU
                             </span>
-                        </Link>
+                        </a>
                         <p className="text-[#868685] text-sm leading-relaxed max-w-sm mb-8">
                             Business Analyst with a solid foundation in transforming complex business requirements into systematic technical solutions. Specialized in Process Modeling and Digital Product Design throughout the Software Development Life Cycle (SDLC)
                         </p>
                         <div className="flex gap-4">
-                            <a href="/https://www.linkedin.com/in/huyen-ntt/" target="_blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
+                            <a href="https://www.linkedin.com/in/huyen-ntt/" target="_blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
                                 <Linkedin className="w-4 h-4" />
                             </a>
                             <a href="mailto:ntt.huyen4125354@gmail.com" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#d74916] hover:text-[#163300] transition-all">
@@ -65,13 +64,13 @@ export function Footer() {
                         <ul className="space-y-4">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
-                                    <Link
+                                    <a
                                         href={link.href}
                                         className="text-[#868685] text-sm font-semibold hover:text-[#d74916] transition-colors flex items-center group"
                                     >
                                         {link.name}
                                         <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                         </ul>
