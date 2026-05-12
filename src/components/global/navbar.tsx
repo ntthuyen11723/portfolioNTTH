@@ -1,4 +1,4 @@
-import Link from "next/link";
+import a from "next/link";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -13,18 +13,18 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="font-bold text-xl tracking-tighter">
+        <a href="/" className="font-bold text-xl tracking-tighter">
           HUYEN.BA
-        </Link>
+        </a>
         <div className="hidden md:flex gap-6">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="text-sm font-medium hover:text-primary transition-colors">
+            <a key={item.href} href={item.href} className="text-sm font-medium hover:text-primary transition-colors">
               {item.label}
-            </Link>
+            </a>
           ))}
         </div>
         <Button asChild variant="primary" size="sm">
-          <Link href="/contact">Liên hệ</Link>
+          <a href="/contact">Liên hệ</a>
         </Button>
       </div>
     </nav>

@@ -37,7 +37,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* 2. PROJECT LIST SECTION */}
-      <section className="bg-slate-50/50 py-16 md:py-24">
+      <section className="bg-slate-50/50 py-16 md:py-16">
         <div className="container max-w-6xl mx-auto px-4">
           
           {/* Real Information Header - Thay thế cho Virtual Filters */}
@@ -83,9 +83,9 @@ export default function ProjectsPage() {
           </div>
 
           {/* Footer Section */}
-          <div className="mt-20 text-center">
+          <div className="mt-10 text-center">
             <div className="inline-block p-[1px] rounded-full bg-gradient-to-r from-transparent via-slate-200 to-transparent w-full max-w-lg mb-8" />
-            <p className="text-4xl text-[#d44f0d97] font-medium">
+            <p className="text-lg text-[#d44f0d97] font-medium">
               Click to view project details
             </p>
           </div>
