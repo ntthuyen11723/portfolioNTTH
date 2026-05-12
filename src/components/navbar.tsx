@@ -76,7 +76,7 @@ export function Navbar() {
             </a>
           </Button>
           {/* <div className="h-4 w-px bg-[#000312] mx-1" /> */}
-          {/* <Button asChild className="bg-[#286181] hover:bg-[#1a4158] rounded-xl font-bold px-6 shadow-md shadow-blue-900/10">
+          {/* <Button asChild className="bg-[#00072D] hover:bg-[#1a4158] rounded-xl font-bold px-6 shadow-md shadow-blue-900/10">
             <Link href="/contact">Hire Me</Link>
           </Button> */}
         </div>
@@ -92,7 +92,7 @@ export function Navbar() {
             <SheetContent side="right" className="w-[300px] p-0 border-l border-slate-100">
               <div className="flex flex-col h-full bg-white">
                 <div className="p-6 border-b border-slate-50 flex justify-between items-center">
-                  <span className="font-bold text-[#286181] text-lg italic underline decoration-2">Menu Navigation</span>
+                  <span className="font-bold text-[#00072D] text-lg italic underline decoration-2">Menu Navigation</span>
                 </div>
                 <div className="flex-1 overflow-y-auto py-6 px-4">
                   {navItems.map((item) => (
@@ -103,7 +103,7 @@ export function Navbar() {
                       className={cn(
                         "flex w-full items-center px-6 py-4 text-lg font-bold transition-all rounded-2xl mb-2",
                         pathname === item.href
-                          ? "bg-[#e6f4f9] text-[#286181] translate-x-2"
+                          ? "bg-[#e6f4f9] text-[#00072D] translate-x-2"
                           : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                       )}
                     >
@@ -112,7 +112,7 @@ export function Navbar() {
                   ))}
                 </div>
                 <div className="p-6 border-t border-slate-50">
-                  <Button asChild className="w-full bg-[#286181] h-14 rounded-2xl text-base font-bold shadow-lg">
+                  <Button asChild className="w-full bg-[#00072D] h-14 rounded-2xl text-base font-bold shadow-lg">
                     <Link href="/contact" onClick={() => setIsOpen(false)}>Contact Now</Link>
                   </Button>
                 </div>
