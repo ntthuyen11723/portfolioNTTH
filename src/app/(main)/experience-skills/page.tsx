@@ -16,7 +16,6 @@ import {
   CheckCircle,
   Users,
   Database,
-  FileText,
   Lightbulb,
 } from "lucide-react";
 import Image  from "next/image";
@@ -158,7 +157,7 @@ const SKILL_CATEGORIES = [
 
 /* ================= SHARED COMPONENTS ================= */
 
-const IconBox = ({ icon: Icon, className = "" }: { icon: any; className?: string }) => (
+const IconBox = ({ icon: Icon, className = "" }: { icon: React.ElementType; className?: string }) => (
   <div className={`w-14 h-14 rounded-2xl bor border-[#00072D] shadow-lg shadow-[#00072D]/20 flex items-center justify-center shrink-0 ${className}`}>
     <Icon className="w-6 h-6 text-[#00072D]" />
   </div>

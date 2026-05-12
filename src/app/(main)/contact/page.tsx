@@ -74,7 +74,7 @@ export default function HireMePage() {
           </h1>
 
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-            "Every limit starts as an unverified assumption"
+            &ldquo;Every limit starts as an unverified assumption&rdquo;
           </p>
 
           {/* CTA */}
