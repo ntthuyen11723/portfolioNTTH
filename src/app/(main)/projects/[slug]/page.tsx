@@ -3,8 +3,8 @@
 import { notFound } from "next/navigation";
 import { useState, useRef } from "react";
 import { PROJECTS, } from "@/features/projects/constants";
-import { Project, ArtifactItem } from "@/features/projects/types";
-import a from "next/link";
+import {ArtifactItem } from "@/features/projects/types";
+
 import Image from "next/image";
 
 
@@ -37,7 +37,7 @@ function Carousel({ images, title }: CarouselProps) {
   };
   const onMouseUp = (e: React.MouseEvent) => {
     const delta = e.clientX - startX.current;
-    if (Math.abs(delta) > 40) delta < 0 ? next() : prev();
+    if (Math.abs(delta) > 40) { if (delta < 0) next(); else prev(); }
   };
 
   if (!images || images.length === 0) return null;

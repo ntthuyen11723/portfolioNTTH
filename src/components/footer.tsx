@@ -1,4 +1,3 @@
-import a from 'next/link';
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 
 // LinkedIn Icon

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PROJECTS } from "@/features/projects/constants";
 import { ProjectCard } from "@/features/projects/components/project-card";
-import { Rocket, ArrowRight, FileDown, Sparkles, ChevronRight, FileSearch, Brain, GitBranch, Layout, CheckCircle, Users, ShieldCheck, CircleCheckBig,Form } from "lucide-react";
+import { Rocket, Sparkles, ChevronRight, FileSearch, GitBranch, Layout, Users, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 
@@ -147,7 +147,7 @@ export default function HomePage() {
                     Hello!
                   </span>
                   <span className="block text-[#0f172a] text-xl md:text-2xl font-bold">
-                    I'm Huyen Nguyen Thi Thu,
+                    I&apos;m Huyen Nguyen Thi Thu,
                   </span>
                 </div>
 

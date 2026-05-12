@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   FileDown,
   Menu,
-  Layers,
   Sprout,
 } from "lucide-react";
 import {
@@ -29,7 +28,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-[100] w-full border-b border-[#e6f4f9] bg-[#000312] backdrop-blur-md">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 max-w-xl">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 max-w-6xl">
 
         {/* LOGO */}
         <a href="/" className="flex items-center gap-2 group">
@@ -72,7 +71,7 @@ export function Navbar() {
             {/* Tên file khớp với Resume của bạn */}
             <a href="https://docs.google.com/document/d/1AuvtumRA0943NpP2oIwO1rED3kZ6CY2E6bLnlAeuKVI/edit?usp=sharing">
               <FileDown className="mr-2 h-4 w-4 " />
-              CV
+              View CV
             </a>
           </Button>
           {/* <div className="h-4 w-px bg-[#000312] mx-1" /> */}
@@ -113,7 +112,9 @@ export function Navbar() {
                 </div>
                 <div className="p-6 border-t border-slate-50">
                   <Button asChild className="w-full bg-[#00072D] h-14 rounded-2xl text-base font-bold shadow-lg">
-                    <a href="/contact" onClick={() => setIsOpen(false)}>Contact Now</a>
+                  <a href="mailto:ntt.huyen4125354@gmail.com">
+                    Contact me now !
+                  </a>
                   </Button>
                 </div>
               </div>
