@@ -192,36 +192,6 @@ function ArtifactSection({ type, item }: { type: string; item: ArtifactItem }) {
   );
 }
 
-/* ============================================================
-   PROCESS STEP & OTHER SUB-COMPONENTS
-   ============================================================ */
-
-// function ProcessStep({ step, index, total }: { step: Project["process"]["steps"][number]; index: number; total: number }) {
-//   return (
-//     <div className="relative flex gap-5">
-//       <div className="flex flex-col items-center">
-//         <div className="w-8 h-8 rounded-full border-2 border-[#00072D] bg-white flex items-center justify-center z-10 flex-shrink-0">
-//           <span className="text-[10px] font-black text-[#00072D]">{String(index + 1).padStart(2, "0")}</span>
-//         </div>
-//         {index < total - 1 && <div className="flex-1 w-px bg-gradient-to-b from-[#00072D]/30 to-transparent mt-1 mb-1" />}
-//       </div>
-//       <div className="pb-8 flex-1 min-w-0">
-//         <h4 className="font-bold text-slate-900 mb-1">{step.name}</h4>
-//         <p className="text-sm text-slate-500 leading-relaxed mb-3">{step.description}</p>
-//         {step.output && step.output.length > 0 && (
-//           <div className="flex flex-wrap gap-2">
-//             {step.output.map((o) => (
-//               <span key={o} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#00072D]/8 border border-[#00072D]/20 text-[#00072D] text-[11px] font-semibold">
-//                 <span className="opacity-60">→</span> {o}
-//               </span>
-//             ))}
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
 function PainPoint({ text, index }: { text: string; index: number }) {
   return (
     <div className="flex gap-4 p-4 rounded-xl border border-[#00072D]/15 bg-[#00072D]/[0.04] group hover:bg-[#00072D]/[0.08] hover:border-[#00072D]/30 transition-all duration-200">
@@ -267,8 +237,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
   const metricEntries: { label: string; value: number }[] = [
     project.metrics.bpmn != null
       ? {
-        label: isAnSinhXaHoi ? "Use Cases" : "BPMN Flows", // <-- SỬA DÒNG NÀY
-        value: project.metrics.bpmn
+        label:  "BPMN Flows", value: project.metrics.bpmn
       }
       : null,
     project.metrics.screens != null

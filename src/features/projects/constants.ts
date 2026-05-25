@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     heroImage: "/images/digital/sct.png",
 
     tags: ["SRS", "BPMN", "ERD", "UAT"],
-    tools: ["Figma", "Draw.io", "MySQL","GenAI(Gemini, Claude),..."],
+    tools: ["Figma", "Draw.io", "MySQL","GenAI (Gemini, Claude),..."],
 
     /* ===== METRICS ===== */
     metrics: {
@@ -127,7 +127,7 @@ export const PROJECTS: Project[] = [
     heroImage: "/DVX247.png",
 
     tags: ["Use Cases", "BRD", "BPMN", "UX/UI"],
-    tools: ["Figma", "Power BI","GenAI(Gemini, Claude),..."],
+    tools: ["Figma", "Power BI","GenAI (Gemini, Claude),..."],
 
     /* ===== METRICS ===== */
     metrics: {
@@ -148,7 +148,8 @@ export const PROJECTS: Project[] = [
         "Unstandardized Service Quality"
 
       ],
-      problemdtl: ["Manual management via calls and spreadsheets causes operational delays",
+      problemdtl: [
+        "Manual management via calls and spreadsheets causes operational delays",
         "Fragmented communication between stakeholders increases response times and errors",
         "Lack of real-time monitoring for vehicle usage and driver availability",
         "Manual commission calculations need improved financial transparency and accuracy",
@@ -194,14 +195,13 @@ export const PROJECTS: Project[] = [
     /* ===== OUTCOME ===== */
     outcome: {
       impact: [
-        "Authored Use Cases for 3 actor roles and 12 process descriptions",
-        "Designed 45 backend UI/UX screens in Figma adopted as the dev team's implementation reference",
-        "Modeled 3 BPMN workflows clarifying multi-party service flow (renters, agencies, drivers)",
+        "Authored Use Cases for 3 roles and 12 BPMN workflows clarifying multi-party service flows",
+        "Designed 61 backend UI/UX screens in Figma adopted as the dev team's implementation reference",
         "Pre go-live: collaborated with development team to ensure accurate requirement translation",
       ],
       highlights: [
         { label: "BPMN Flows", value: 3 },
-        { label: "Screens", value: 45 },
+        { label: "Screens", value: 61 },
       ],
     },
   },
@@ -225,7 +225,7 @@ export const PROJECTS: Project[] = [
     heroImage: "/images/digital/asxh.png",
 
     tags: ["SRS", "BPMN", "Use Case", "UX/UI"],
-    tools: ["Figma", "Draw.io", "Microsoft Word", "GenAI(Gemini)","..."],
+    tools: ["Figma", "Draw.io", "Microsoft Word", "GenAI (Gemini),..."],
 
     /* ===== METRICS ===== */
     metrics: {
