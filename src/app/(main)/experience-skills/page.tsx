@@ -468,7 +468,7 @@ export default function ExperienceAndSkillsPage() {
             >
               {/* Header: Icon, Subtitle và Title trên cùng 1 hàng */}
               <div className="flex items-center group-hover:border-[#00072D] border-[#00072D]/20 gap-5 mb-6">
-                <IconBox icon={item.icon} className="shrink-0 hover:bg-[#00072D]/[0.1] border border-[#00072D]/20" />
+                <IconBox icon={item.icon} className="shrink-0 hover:bg-[#00072D]/[0.05] border border-[#00072D]/20" />
                 
                 <div className="flex flex-col">
                   <span className="text-[11px] font-bold text-[#00072D]/60 uppercase tracking-[0.2em] mb-1">
@@ -481,14 +481,14 @@ export default function ExperienceAndSkillsPage() {
               </div>
 
               {/* Description */}
-              <p className="text-[15px] leading-relaxed text-slate-500 font-medium mb-6 flex-1">
+              <p className="text-[15px] leading-relaxed text-slate-500 font-medium mb-6 flex-1 group-hover:text-black">
                 {item.desc}
               </p>
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-2 border-t border-slate-100">
+              <div className="flex flex-wrap gap-2  ">
                 {item.tags.map(tag => (
-                  <span key={tag} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-[#a8f0d669] text-[#00072D] border border-[#00072D]/20">
+                  <span key={tag} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-[#ffffff] border-orange-300 text-[#00072D] border">
                     {tag}
                   </span>
                 ))}
