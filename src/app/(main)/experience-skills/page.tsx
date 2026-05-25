@@ -18,7 +18,7 @@ import {
   Database,
   Lightbulb,
 } from "lucide-react";
-import Image  from "next/image";
+import Image from "next/image";
 
 /* ================= DATA: EXPERIENCE ================= */
 
@@ -128,22 +128,25 @@ const TIMELINE_DATA = [
 /* ================= DATA: SKILLS ================= */
 
 const TECHNICAL_STACK = [
-  "Process Modeling: BPMN 2.0, Activity Diagram, Use Case Diagram",
-  "Data Modeling: ERD",
-  "Documentation: SRS, BRD, FRS, User Guide",
-  "Requirements Management: Backlog, User Story, Acceptance Criteria",
-  "UX/UI Design: Wireframing & Prototyping",
-  "Data & Analytics: MySQL, Power BI",
-  "Testing & Validation: Test Case Design, UAT Planning & Execution",
+  "Requirements Elicitation & Analysis (Interviewing, data-driven insights)",
+  "Stakeholder Management (Facilitation, negotiation, and alignment)",
+  "Business Process Modeling (BPMN 2.0, Activity Diagram, Use Case Diagram, User Flows)",
+  "Documentation Rigor & Attention to Detail (BRD, SRS, FRS, User Guide)",
+  "Wireframing & Prototyping (Low-to-high fidelity UX/UI concepts)",
+  "Feature Prioritization & Product Backlog Management (User Stories, Acceptance Criteria, Estimation)",
+  "Sprint Planning & Product Roadmap (Release planning, milestone tracking)",
+  "End-to-End SDLC Delivery (Agile/Scrum mindset, Testing & Validation, Test Case Design, UAT Planning & Execution)",
+  "AI-assisted Requirement Analysis & Documentation (Prompt Engineering for BAs)"
 ];
 
 const SOFT_SKILLS = [
-  "Requirement elicitation & stakeholder facilitation",
-  "Cross-functional communication (business & technical teams)",
-  "Analytical thinking & root cause analysis",
-  "Documentation rigor & attention to detail",
-  "Self-directed learning & adaptability",
+  "Communication (Cross-functional communication between business & technical teams)",
+  "Teamwork (Stakeholder facilitation & collaboration)",
+  "Critical Thinking (Analytical thinking & root cause analysis)",
+  "Quick Adaptation & Self-learning (Self-directed learning, adaptability to new domain/tech)",
+  "Leadership (Ownership of deliverables, managing stakeholder expectations)",
 ];
+
 
 const SKILL_CATEGORIES = [
   {
@@ -151,7 +154,7 @@ const SKILL_CATEGORIES = [
     subtitle: "Design & Modeling",
     icon: Layout,
     desc: "Proficient in using visualization tools to optimize the communication process between Stakeholders and Dev",
-    tags: ["Figma", "Draw.io", "Visio", "Power BI", "GenAI", "Microsoft Office", "Google Workspace", "Notion","Jira","Odoo"],
+    tags: ["Figma", "Draw.io", "Visio", "Power BI", "GenAI", "Microsoft Office", "Google Workspace", "Notion", "Jira", "Odoo"],
   },
 ];
 
@@ -411,7 +414,7 @@ export default function ExperienceAndSkillsPage() {
               <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
                 <IconBox icon={Database} className="bg-white shadow-none text-[#00072D]" />
                 <div>
-                  <h4 className="text-3xl font-bold text-white leading-tight mb-2">Technical </h4>
+                  <h4 className="text-3xl font-bold text-white leading-tight mb-2"> BA & Product Skills </h4>
                   {/* <p className="text-slate-300 font-medium text-sm">Nền tảng kỹ thuật và công cụ xử lý dữ liệu.</p> */}
                 </div>
               </div>
@@ -424,10 +427,10 @@ export default function ExperienceAndSkillsPage() {
               </div>
             </div>
 
- {/* Cột phải: Soft Skills (Light Theme) */}
+            {/* Cột phải: Soft Skills (Light Theme) */}
             {/* Thêm 'relative' và 'overflow-hidden' vào container cha */}
             <div className="relative overflow-hidden p-10 md:p-14 flex flex-col border border-[#00072D]/20 rounded-r-[2.5rem] bg-[#d7491609] space-y-10">
-              
+
               {/* Nội dung Header */}
               <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
                 <IconBox icon={Lightbulb} className="bg-[#f8f9fa] border border-[#00072D]/70 shadow-none text-[#00072D]" />
@@ -445,11 +448,11 @@ export default function ExperienceAndSkillsPage() {
 
               {/* HÌNH ẢNH CHIBI GÓC DƯỚI PHẢI */}
               {/* Thay đổi: z-20 (đè lên text), bottom-5, w/h +10pt dùng hàm calc() */}
-              <div className="absolute bottom-5 right-0 w-[calc(12rem)] h-[calc(15rem)] md:w-[calc(15rem)] md:h-[calc(15rem)] z-20 pointer-events-none opacity-90">
-                <Image 
-                  src="/mechibi.png" 
-                  alt="Chibi Avatar" 
-                  fill 
+              <div className="absolute bottom-5 right-0 w-[calc(18rem)] h-[calc(18rem)] md:w-[calc(22rem)] md:h-[calc(22rem)] z-20 pointer-events-none opacity-100">
+                <Image
+                  src="/mechibi.png"
+                  alt="Chibi Avatar"
+                  fill
                   className="object-contain object-bottom"
                 />
               </div>
@@ -459,7 +462,7 @@ export default function ExperienceAndSkillsPage() {
         </div>
 
         {/* SKILL CATEGORIES (Analysis Tools & Business Analysis) */}
-       <div className="">
+        <div className="">
           {SKILL_CATEGORIES.map((item) => (
             <motion.div
               key={item.title}
@@ -469,7 +472,7 @@ export default function ExperienceAndSkillsPage() {
               {/* Header: Icon, Subtitle và Title trên cùng 1 hàng */}
               <div className="flex items-center group-hover:border-[#00072D] border-[#00072D]/20 gap-5 mb-6">
                 <IconBox icon={item.icon} className="shrink-0 hover:bg-[#00072D]/[0.05] border border-[#00072D]/20" />
-                
+
                 <div className="flex flex-col">
                   <span className="text-[11px] font-bold text-[#00072D]/60 uppercase tracking-[0.2em] mb-1">
                     {item.subtitle}
