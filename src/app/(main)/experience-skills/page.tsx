@@ -61,7 +61,7 @@ const TIMELINE_DATA = [
     type: "work",
     role: "IT Business Analyst",
     organization: "HONEYNET.,JS",
-    time: "05/2025 - April 2026",
+    time: "May 2025 - April 2026",
     icon: Briefcase,
     summary: "",
     responsibilities: [
@@ -119,7 +119,7 @@ const TIMELINE_DATA = [
       "Apply academic knowledge to real-world projects",
     ],
     metrics: {
-      gpa: "3.12/4.0",
+      gpa: "3.14/4.0",
     },
     tags: ["System Analysis", "Research", "Blockchain", "Team Leadership", "Planning"],
   },
