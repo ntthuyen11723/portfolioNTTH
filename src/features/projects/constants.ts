@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
     type: "Device Management System",
     domain: "Enterprise / Supply Chain/ Inventory Management",
     method: "Waterfall",
-    duration: "May 2025 - April 2025",
+    duration: "May 2025 - April 2026",
     teamSize: 6,
 
     shortDescription:
