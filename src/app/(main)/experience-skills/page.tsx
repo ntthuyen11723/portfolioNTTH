@@ -59,13 +59,14 @@ const TIMELINE_DATA = [
   {
     id: "honeynet",
     type: "work",
-    role: "IT Business Analyst",
+    role: "IT Business Analyst (Intern to Full-time Transition)",
     organization: "HONEYNET.,JS",
-    time: "May 2025 - April 2026",
+    time: "January 2025 - April 2026",
     icon: Briefcase,
     summary: "",
     responsibilities: [
       "Elicited and analyzed business requirements through stakeholder discussions to define project scope and functional specifications",
+      "Participated in scoping and estimation, collaborating with the BA Lead to define project timelines and prioritize features based on business value",
       "Transformed complex business requirements into structured project artifacts, including BRD, SRS, and User Stories",
       "Modeled business processes (BPMN) and system workflows to support development and ensure alignment with business objectives",
       "Designed wireframes and mockups (Figma, Draw.io) for web and mobile applications to visualize user flows and system interactions",
@@ -92,7 +93,7 @@ const TIMELINE_DATA = [
       screens: 35,
       actors: 6,
     },
-    tags: ["BPMN", "Figma", "UAT", "Agile"],
+    tags: ["BPMN", "Figma", "UAT", "Agile","Product Backlog", "SRS/BRD/RCA","User Stories"],
   },
   {
     id: "vanlang",
