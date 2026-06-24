@@ -297,10 +297,11 @@ export const PROJECTS: Project[] = [
     /* ===== OUTCOME ===== */
     outcome: {
       impact: [
+        "Gathered and analyzed stakeholder requirements to define over 40 project features",
         "Authored full SRS and Use Case documentation for the digital social welfare portal, covering 6 actor roles across 3 BPMN workflows",
         "Designed 45 UI/UX screens for synchronized web portal and mobile app supporting online submission and real-time status tracking",
         "Modeled AS-IS and TO-BE business processes to replace manual paperwork workflows previously handled offline",
-        "Participated in UAT cycles with stakeholder validation prior to deployment",
+        "Participated in UAT cycle with pre-implementation stakeholder validation with 450+ test cases",
       ],
 
       highlights: [
